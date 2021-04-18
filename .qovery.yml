@@ -1,0 +1,15 @@
+---
+application:
+  name: "tutorial"
+  project: "firstproject"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "my-db"
+  version: "11"
+routers:
+- name: "main"
+  routes:
+  - application_name: "tutorial"
+    paths:
+    - "/*"
